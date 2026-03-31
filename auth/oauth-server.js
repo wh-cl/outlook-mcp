@@ -57,8 +57,8 @@ function createAuthConfig(envPrefix = 'MS_') {
     clientSecret: process.env[`${envPrefix}CLIENT_SECRET`] || '',
     redirectUri: process.env[`${envPrefix}REDIRECT_URI`] || 'http://localhost:3333/auth/callback',
     scopes: (process.env[`${envPrefix}SCOPES`] || 'offline_access User.Read Mail.Read').split(' '),
-    tokenEndpoint: process.env[`${envPrefix}TOKEN_ENDPOINT`] || 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
-    authEndpoint: process.env[`${envPrefix}AUTH_ENDPOINT`] || 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
+    tokenEndpoint: process.env[`${envPrefix}TOKEN_ENDPOINT`] || 'https://login.microsoftonline.com/ff4d27ad-c80b-4f85-946e-1eb65aa4fdd5/oauth2/v2.0/token',
+    authEndpoint: process.env[`${envPrefix}AUTH_ENDPOINT`] || 'https://login.microsoftonline.com/ff4d27ad-c80b-4f85-946e-1eb65aa4fdd5/oauth2/v2.0/authorize'
   };
 }
 
